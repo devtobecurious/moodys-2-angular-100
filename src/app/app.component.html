@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  {{ title | uppercase }}
+  <mat-icon>shopping_cart</mat-icon>
+  {{ cartProducts | count }}
+  <amb-search-item ></amb-search-item>
+</mat-toolbar>
+
+<amb-cart ></amb-cart>
+<amb-product-list></amb-product-list>
+
+

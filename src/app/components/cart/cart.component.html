@@ -1,0 +1,16 @@
+<h2>
+  Shopping cart
+</h2>
+
+<amb-product
+  *ngFor="let p of products; let i = index"
+  [product]="p"
+  [ambSuper]="{
+    color: 'orange',
+    index: i
+  }"
+></amb-product>
+
+<pre>
+  {{ products | cartFilter | json }}
+</pre>

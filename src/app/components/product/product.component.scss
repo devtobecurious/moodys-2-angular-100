@@ -1,0 +1,13 @@
+:host {
+  width: 200px;
+  display: inline-block;
+  border: solid 2px silver;
+  padding: 20px;
+  margin: 40px;
+  vertical-align: top;
+
+  img {
+    width: 200px;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,12 @@
+<h2 #productTitle>{{ product.title }}</h2>
+<h3>{{ product.price | vat | currency:'EUR' }}</h3>
+<img
+  (mouseover)="toggleImageMouseover()"
+  (mouseleave)="toggleImageMouseover()"
+  [style.zoom]="isImageMouseover ? '200%' : '100%'"
+  (click)="handleImageClick($event)"
+  [src]="product.image"
+>
+<p>{{ product.description }}</p>
+<button mat-raised-button (click)="handleCartClick()">Ajouter au panier</button>
+

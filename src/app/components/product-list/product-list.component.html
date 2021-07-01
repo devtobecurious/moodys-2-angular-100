@@ -1,0 +1,32 @@
+<h2>
+  Product list
+</h2>
+<div>
+  <mat-form-field>
+    <!-- <input
+      matInput
+      placeholder="Rechercher..."
+      [ngModel]="searchString"
+      (ngModelChange)="searchString = $event"
+    > -->
+    <input
+      matInput
+      placeholder="Rechercher..."
+      [(ngModel)]="searchString"
+    >
+  </mat-form-field>
+</div>
+
+<amb-product
+  (addToCart)="handleAddToCart($event)"
+  [product]="p"
+  *ngFor="let p of products | search:searchString; let i = index"
+  [ambSuper]="{
+    color: 'silver',
+    index: i
+  }"
+></amb-product>
+
+<pre>
+  {{ products | json | uppercase | lowercase }}
+</pre>
