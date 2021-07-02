@@ -62,7 +62,7 @@ fdescribe('AppComponent', () => {
   });
 
   it('should render title', () => {
-    // fixture.detectChanges();
+    fixture.detectChanges();
     const compiled = fixture.nativeElement;
 
     const htmlObj = compiled.querySelector('.mat-toolbar-single-row');
