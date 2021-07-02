@@ -10,7 +10,7 @@ import { VatPipe } from './pipes/vat.pipe';
 import { SearchPipe } from './pipes/search.pipe';
 import { CountPipe } from './pipes/count.pipe';
 import { CurrencyPipe } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CartFilterPipe } from './pipes/cart-filter.pipe';
@@ -19,6 +19,7 @@ import { SearchModule } from './shared/modules/search/search.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CartModule } from './features/cart/cart.module';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductCreateComponent } from './components/product-create/product-create.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AppRoutingModule } from './app-routing.module';
     CountPipe,
     ProductListComponent,
     CartComponent,
-    CartFilterPipe
+    CartFilterPipe,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,7 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     AppRoutingModule,
     AmbMaterialModule,
+    ReactiveFormsModule,
     FormsModule,
     SearchModule,
     CartModule

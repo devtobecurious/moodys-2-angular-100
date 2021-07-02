@@ -1,0 +1,10 @@
+<h1>Nouveau produit</h1>
+
+<div>
+  {{ product | json }}
+  <input type="text" [(ngModel)]="product.title" name="title">
+</div>
+
+<div>
+  <button (click)="clickToSave()">Save</button>
+</div>
