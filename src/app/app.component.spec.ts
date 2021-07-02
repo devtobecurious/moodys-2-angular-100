@@ -16,7 +16,7 @@ import { SearchPipe } from './pipes/search.pipe';
 import { VatPipe } from './pipes/vat.pipe';
 import { SearchModule } from './shared/modules/search/search.module';
 
-fdescribe('AppComponent', () => {
+describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [

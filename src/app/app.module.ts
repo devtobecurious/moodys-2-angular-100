@@ -17,6 +17,7 @@ import { CartFilterPipe } from './pipes/cart-filter.pipe';
 import { CartService } from './services/cart.service';
 import { SearchModule } from './shared/modules/search/search.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CartModule } from './features/cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AmbMaterialModule,
     FormsModule,
-    SearchModule
+    SearchModule,
+    CartModule
   ],
   providers: [
     VatPipe,
