@@ -3,7 +3,10 @@
 <form #productForm="ngForm">
   <div>
     {{ product | json }}
-    <input type="text" [(ngModel)]="product.title" name="title" required>
+    <input type="text" #title="ngModel" [(ngModel)]="product.title" name="title" required>
+    <div [hidden]="title.valid">
+      Titre requis
+    </div>
   </div>
 
   <div>
