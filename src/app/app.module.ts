@@ -18,6 +18,7 @@ import { CartService } from './services/cart.service';
 import { SearchModule } from './shared/modules/search/search.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CartModule } from './features/cart/cart.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CartModule } from './features/cart/cart.module';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    AppRoutingModule,
     AmbMaterialModule,
     FormsModule,
     SearchModule,
