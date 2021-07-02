@@ -10,7 +10,7 @@ import { DataService } from './services/data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Formation AMBIENT-IT';
+  title = 'formationmoodys';
 
   cartProducts: Product[] = [];
 
