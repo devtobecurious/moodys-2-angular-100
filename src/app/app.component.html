@@ -1,6 +1,22 @@
 {{ travailDePuisComposant() }}
 
-
+<ul>
+  <li>
+    <a href="/">Accueil</a>
+  </li>
+  <li>
+    <a href="panier">Panier</a>
+  </li>
+  <li>
+    <a routerLink="panier">Panier (url bien)</a>
+  </li>
+  <li>
+    <a [routerLink]="['panier', 1]">Panier 1 (url bien)</a>
+  </li>
+  <li>
+    <button (click)="clickToGo()">Go to panier</button>
+  </li>
+</ul>
 
 
 <mat-toolbar color="primary">

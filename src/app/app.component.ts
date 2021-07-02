@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Product } from './models/product.model';
 import { CartService } from './services/cart.service';
@@ -59,5 +60,9 @@ export class AppComponent {
     subscription.unsubscribe();
   }
 
-  constructor(private cartService: CartService) {}
+  clickToGo() {
+    this.router.navigate(['panier']);
+  }
+
+  constructor(private cartService: CartService, private router: Router) {}
 }
