@@ -6,9 +6,7 @@
     "preahquecoucou": "echo 'avant'",
     "ahquecoucou": "echo 'ah que coucou'",
     "postahquecoucou": "echo 'apres'",
-
     "start": "npm run ahquecoucou && ng serve",
-
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

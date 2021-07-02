@@ -14,6 +14,10 @@ export class AppComponent {
 
   cartProducts: Product[] = [];
 
+  travailDePuisComposant() {
+    console.warn('je suis appelée');
+  }
+
   ngOnInit() {
     this.cartProducts = this.cartService.cartProducts;
 
